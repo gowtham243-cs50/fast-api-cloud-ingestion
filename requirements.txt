@@ -6,5 +6,9 @@ langchain_text_splitters
 python-multipart
 fastapi
 groq
+<<<<<<< HEAD
 llama-cloud
+=======
+llama_cloud
+>>>>>>> 90aec79f (second)
 
