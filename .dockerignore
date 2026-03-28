@@ -1,0 +1,50 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Python cache / compiled files
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info
+.eggs
+*.dist-info
+
+# Virtual environments
+venv/
+.venv/
+env/
+.virtualenv/
+.python-version
+
+# Editor / IDE / OS noise
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# Test & dev artifacts
+tests/
+**/test_*.py
+**/*_test.py
+*.ipynb
+.coverage
+htmlcov/
+.mypy_cache/
+.pytest_cache/
+.cache/
+.tox/
+.nox/
+
+# Logs & temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+
