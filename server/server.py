@@ -28,7 +28,7 @@ async def upload_document(
         with temp_file_path.open("wb") as f:
             shutil.copyfileobj(file.file, f)
 
-        index_pdfs(source=str(temp_file_path), collection_name=collection_name)
+        await index_pdfs(source=str(temp_file_path), collection_name=collection_name)
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error indexing file: {e}")

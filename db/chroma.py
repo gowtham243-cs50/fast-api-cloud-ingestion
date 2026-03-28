@@ -21,7 +21,7 @@ def init_collection(name: str = "your_collection_name2"):
     collection = client.get_or_create_collection(name=name,embedding_function=ef)
     return collection
 
-def index_pdfs(source: str, collection_name: str):
+async def index_pdfs(source: str, collection_name: str):
     """Index a single PDF/markdown source into the given Chroma collection.
 
     - Ensures the collection is initialised before use
@@ -29,7 +29,7 @@ def index_pdfs(source: str, collection_name: str):
     - Appends new IDs after the current max numeric suffix
     """
 
-    documents, images = get_markdown_chunks(source)
+    documents, images = await get_markdown_chunks(source)
 
     collection = init_collection(name=collection_name)
 

@@ -1,12 +1,9 @@
 ezdxf
 chromadb
-docling
 langchain
 python-dotenv
-FlagEmbedding
 langchain_text_splitters
 python-multipart
 fastapi
-tree_sitter
 groq
 
